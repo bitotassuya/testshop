@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>NonSensei Web</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script src='LoginFrom.js'></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div class="topnav">
+        <ul>
+            <a href="home page.html">Home </a>
+            <a class="active" href="Account.html">Account </a>
+
+        </ul>
+    </div>
+    <!-- Account Page -->
+    <div class="account-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                </div>
+                <div class="col-2">
+                    <div class="form-container">
+                        <div class="form-btn">
+                            <span onclick="login()">Login</span>
+                            <span onclick="register()">Register</span>
+                            <hr id="Indicator">
+                        </div>
+                        <form id="LoginForm">
+                            <input type="text" placeholder="Username">
+                            <input type="password" placeholder="Password">
+                            <button type="submit" onclick="move()" class="btn">Login</button>
+                            <p class="loader"></p>
+                            <a href="">Forget Password</a>
+                        </form>
+
+                        <form id="RegForm">
+                            <input type="text" placeholder="Username">
+                            <input type="email" placeholder="Email">
+                            <input type="password" placeholder="Password">
+                            <div id="myProgress">
+                                <div id="myBar">10%</div>
+                            </div>
+                            <button type=" " class="btn">Register</button>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<footer>
+
+</footer>
+
+</html>
